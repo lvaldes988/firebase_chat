@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+
+.loading-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.loading-screen div {
+    height: 70px;
+    width: 15px;
+    background-color: rgb(42, 2, 116);
+    margin: 5px;
+    border-radius: 10px;
+    animation: bar 700ms infinite alternate;
+}
+
+
+.loading-screen div:nth-child(2) {
+    animation-delay: 600ms;
+    
+}
+
+.loading-screen div:nth-child(3) {
+    animation-delay: 900ms;
+    
+}
+
+.loading-screen div:nth-child(4) {
+    animation-delay: 1200ms;
+    
+}
+
+@keyframes bar {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color:  rgb(147, 189, 245);
+    animation: bg-slide 5s linear infinite;
+    background-size: 100vw 100vh;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.ion-ios-people {
+    font-size: 150px;    
+    animation: colors 1s ease alternate-reverse infinite;
+}
+
+.btn-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
+
+.btn {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 1rem;
+    color: #020f0f;
+}
+
+.accent-color-1 {
+    background-color: rgb(31, 5, 182);
+}
+
+.accent-color-2 {
+    background-color: rgb(89, 61, 248);
+}
+
+.accent-color-3 {
+    color: #400585;
+}
+
+.inputs-container {
+    max-width: 600px;
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-title {
+    padding: 16px;
+    flex: 1;
+    color: #090911;
+    font: bold;
+}
+
+.input-wrapper {
+    flex: 2;
+    display: flex;    
+    padding: 0px 10px;
+    font: 2px bold;
+}
+
+.input {
+    flex-grow: 1;
+    font-size: 18px;
+    padding: 10px 10px;
+    height: 25px;
+    border: none;
+    opacity: 1;
+    border-bottom: 1px solid #000;
+    border-radius: 25px;
+    background-color: #d9e1e8;
+    
+}
+
+.input:focus {
+    border-bottom: 2px solid black;
+}
+
+@keyframes colors {
+    0% {
+        color: rgb(10, 133, 170);
+    }
+    50%{
+        color: rgb(147, 72, 233);
+    }
+    100% {
+        color: rgb(31, 160, 117);
+    }
+}
